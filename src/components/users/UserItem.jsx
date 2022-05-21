@@ -18,7 +18,9 @@ function UserItem({ user: { login, avatar_url } }) {
           <Link
             className="text-base-contenet text-opacity-40"
             to={`/users/@{login}`}
-          ></Link>
+          >
+            Visit Profile
+          </Link>
         </div>
       </div>
     </div>
