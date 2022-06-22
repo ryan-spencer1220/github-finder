@@ -4,10 +4,11 @@ import alertReducer from "./AlertReducer";
 const AlertContext = createContext();
 
 export const AlertProvider = ({ children }) => {
-  const initalState = null;
+  const initialState = null;
 
-  const [state, dispatch] = useReducer(alertReducer, initalState);
+  const [state, dispatch] = useReducer(alertReducer, initialState);
 
+  // Set an alert
   const setAlert = (msg, type) => {
     dispatch({
       type: "SET_ALERT",
